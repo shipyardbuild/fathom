@@ -1,6 +1,8 @@
 version: "3"
 services:
   fathom:
+    labels:
+      shipyard.route: '/'
     image: usefathom/fathom:latest
     ports:
       - "8080:8080"
